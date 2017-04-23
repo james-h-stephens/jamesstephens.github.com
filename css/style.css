@@ -647,10 +647,13 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .intro .name {
 	font-weight: 600;
+        color: black;
+   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: gray;
 }
 .intro .intro-text {
 	max-width: 75%;
-    background-color: 'black'
 }
 .intro .intro-text p {
 	font-family: 'Lato', sans-serif;
