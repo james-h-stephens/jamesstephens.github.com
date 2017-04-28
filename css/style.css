@@ -751,6 +751,15 @@ label {
         background-color: rgba(0,0,0, .5);
         padding: 5px 5px 5px 5px
     }
+
+    .portfolio-items > div {
+        width: 100%
+    }
+
+    .portfolio-items > div img {
+        max-height: 100%;
+        margin: auto;
+    }
 }
 
 /* Media Queries */
