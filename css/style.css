@@ -760,6 +760,10 @@ label {
         max-height: 100%;
         margin: auto;
     }
+
+    ol.type li {
+        margin-top: 20px;
+    }
 }
 
 /* Media Queries */
