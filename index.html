@@ -60,17 +60,26 @@
                     <a class="navbar-brand page-scroll" href="#page-top">James Stephens</a>
                 </div>
 
+                <script>
+                    var shiftWindow = function () { scrollBy(0, -50) };
+                    if (location.hash) shiftWindow();
+                    window.addEventListener("hashchange", shiftWindow);
+
+                    function closeMenu() {
+                        var menu = $("#menu").collapse("hide");
+                    }
+                </script>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div id="menu" class="collapse navbar-collapse navbar-right navbar-main-collapse">
                     <ul class="nav navbar-nav">
                         <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                         <li class="hidden"> <a href="#page-top"></a> </li>
-                        <li> <a class="page-scroll" href="#about"  data-toggle="collapse" data-target=".navbar-main-collapse">About</a> </li>
-                        <li> <a class="page-scroll" href="#skills" onclick="$('menu').collapse()">Skills</a> </li>
-                        <li> <a class="page-scroll" href="#portfolio" data-toggle="collapse" data-target=".navbar-main-collapse">Portfolio</a> </li>
-                        <li> <a class="page-scroll" href="#resume">Resume</a> </li>
-                        <li> <a class="page-scroll" href="#contact">Contact</a> </li>
+                        <li> <a class="page-scroll" href="#about" onclick="closeMenu()">About</a> </li>
+                        <li> <a class="page-scroll" href="#skills" onclick="closeMenu()">Skills</a> </li>
+                        <li> <a class="page-scroll" href="#portfolio" onclick="closeMenu()">Portfolio</a> </li>
+                        <li> <a class="page-scroll" href="#resume" onclick="closeMenu()">Resume</a> </li>
+                        <li> <a class="page-scroll" href="#contact" onclick="closeMenu()">Contact</a> </li>
                     </ul>
                 </div>
             </div>
