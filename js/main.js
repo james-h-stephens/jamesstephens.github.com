@@ -30,8 +30,8 @@ $('#nav').affix({
 	var index=0;
 	$(document).scroll(function(){
 		var top = $('#skills').height()-$(window).scrollTop();
-		console.log(top)
-		if(top<-300){
+		var scrollNumber = window.innerWidth < 678 ? 600 : -200;
+		if(top<scrollNumber){
 			if(index==0){	
 			
 				$('.chart').easyPieChart({
