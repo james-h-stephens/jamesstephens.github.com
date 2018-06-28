@@ -218,6 +218,13 @@ hr {
     padding: 25px 0 45px 0;
 }
 /* About Section */
+
+.about-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px
+}
+
 #about {
     padding: 100px 0;
     background: #f6f6f6;
@@ -235,6 +242,7 @@ hr {
     #about img {
         width: auto;
         height: 100px;
+        display: inline-block;
     }
 
 .msca {
@@ -244,12 +252,6 @@ hr {
 
 .sec {
     padding: 0px 21px;
-}
-
-.about-img {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px
 }
 
 @media(max-width:768px) {
