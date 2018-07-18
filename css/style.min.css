@@ -241,9 +241,13 @@ hr {
     height: 100px;
 }
 
-.msca {
+.mcsa {
     padding-left: 5px;
     margin: 0px 20px
+}
+
+.mcse {
+    padding: 0px 15px;
 }
 
 .sec {
@@ -255,7 +259,7 @@ hr {
         margin: 10px 0px;
     }
 
-    .msca {
+    .mcsa {
         padding-left: 5px;
     }
 
